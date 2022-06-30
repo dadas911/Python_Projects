@@ -6,9 +6,10 @@ player_score = 0
 computer_score = 0
 
 def print_score():
-    print("Player -", player_score, " : ", computer_score,"- Computer")
+    print("Player -", player_score, " : ", computer_score,"- Computer\n")
 
 def reset_board():
+    global board
     board = [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']
 
 def print_board():
@@ -44,7 +45,7 @@ def start_game():
     global board
     global computer_score
     global player_score
-    
+
     print('\033[1m' + "\nWelcome to tic-tac-toe game, you have 'X'.\n" + '\033[0m')
     print_board()
 
@@ -77,6 +78,7 @@ def start_game():
     print_score()
     again = input("Do you want to play again (Y/N)? ")
     if again == "Y":
+        reset_board()
         start_game()
     else:
         print("Thank you for playing\n")
