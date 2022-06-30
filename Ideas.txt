@@ -1,0 +1,10 @@
+BEGINNER
+Tic-tac-toe - GUI
+Chess clock - base time + increment, GUI
+
+INTERMEDIATE
+Checkers - GUI
+
+ADVANCED
+Chess - GUI
+Multi-game - tic-tac-toe + checkers + chess
